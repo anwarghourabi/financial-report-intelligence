@@ -1,0 +1,7 @@
+mode,reranker,page_recall@5,MRR
+dense,False,0.537,0.343
+dense,True,0.488,0.358
+sparse,False,0.402,0.286
+sparse,True,0.402,0.297
+hybrid,False,0.463,0.352
+hybrid,True,0.537,0.37
