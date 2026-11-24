@@ -1,0 +1,14 @@
+pymupdf
+pdfplumber
+langchain
+langchain-community
+langgraph
+chromadb
+rank_bm25
+sentence-transformers
+fastmcp
+streamlit
+plotly
+pandas
+ragas
+python-dotenv
