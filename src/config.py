@@ -1,7 +1,5 @@
 from pathlib import Path
-import pandas as pd
 
-# Root folder of the project (works wherever you run the script from)
 ROOT_PATH = Path(__file__).resolve().parent.parent
 
 QDRANT_URL = "http://localhost:6333"
@@ -24,7 +22,3 @@ COMPANIES = [
     "PepsiCo", "Amcor", "Johnson & Johnson", "3M", "Best Buy", "MGM Resorts",
     "Adobe", "JPMorgan", "Nike", "General Mills", "Corning", "Boeing",
 ]
-
-docs = pd.read_json("data/financebench/data/financebench_document_information.jsonl", lines=True)
-print(docs.columns.tolist())
-print(docs[docs["company"].isin(COMPANIES)].groupby(["company", "doc_type"])["doc_period"].apply(list))
